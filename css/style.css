@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F7EDD0;
+}
+
+.custom-navbar {
+    display: flex;
+    align-items: center;
+    background-color: #F7EDD0;
+    padding: 10px 40px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+ 
+}
+
+.logo img {
+    height: 80px; /* Adjust the height of the logo as needed */
+}
+
+.navlinks {
+    list-style-type: none;
+    display: flex;
+    font-size:larger;
+}
+
+.navlinks li {
+    margin: 0 15px;
+    justify-items:center;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #970C10;
+}
+
+.navlinks a:hover {
+    border-bottom: #A1AFA0 solid 3px;;
+}
+
+
+.icon i{
+    margin: 15px;
+    color:#970C10;
+}
+
+.active {
+    border-bottom: #947360 solid 3px;;
+
+}
+
+.grid {
+    display: grid; 
+    height: 100%; 
+    width: 100%; 
+    grid-template-columns: repeat(4, 1fr);
+    gap:0;
+}
+
+#croissant {
+    grid-column: span 4; 
+    grid-row: span 1; 
+}
+
+#croissant img {
+    width: 100%;
+    height: 100%;
+}
+
+#baking {
+    grid-column: span 2; 
+    grid-row: span 1; 
+}
+
+#baking img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.text {
+    grid-column: span 1; 
+    grid-row: span 1; 
+    display: flex;
+    text-align: center;
+    padding: 50% 5%;
+}
+
+#t1{
+    background-color: #A1AFA0;  
+    color:#F7EDD0;
+}
+
+#t3{
+    background-color: #947360;  
+    color:#F7EDD0;
+}
+
+#t2{
+    background-color: #F7EDD0 ;  
+    color:#947360;
+}
+
+.cake{
+    grid-column: span 1; 
+    grid-row: span 1; 
+}
+
+.cake img {
+    width: 25vw;
+    height: 100%;
+}
+
+#square {
+    grid-column: span 2; 
+    grid-row: span 2; 
+}
+
+#square img {
+    width: 50vw;
+    height: 100%;
+}
+
+#bakingtop {
+    width: 100vw;
+}
+
+#our_story {
+    background-color: #A1AFA0;
+    color:#F7EDD0;
+    font-size: 120%;
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
+    line-height: 30px;
+}
+.menubody {
+    background-color: #947360;
+    color: #F7EDD0;
+}
+#demo {
+    width:100vw;
+}
+
+.carousel-caption {
+    color:#F7EDD0;
+}
+
+h1 {
+    text-align: center;
+    padding: 5%;
+}
+
+.category {
+    display:grid;
+    width: 100%; 
+    grid-template-columns: repeat(4, 1fr);
+    gap:0;
+}
+
+.category img {
+    width: 25vw;
+    height: fit-content;
+    filter: brightness(0.85);
+}
+
+.category-item {
+        position: relative;
+        text-align: center;
+}
+
+
+.category-item h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #947360;
+}
+
+.category img:hover {
+    filter: brightness(0.5);
+}
+
+#clicked {
+    filter: brightness(0.3);
+}
+
+.cake-menu {
+    background-color: #947360 ;
+    color:#F7EDD0;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 0 0 100px 0;
+}
+
+.menu-item {
+    margin: 0 0 40px 0;
+}
+
+.menu-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 3px; 
+    border: 3px solid #F7EDD0; 
+}
+
+.menu-image:hover {
+    border: 10px solid #A1AFA0;
+}
+
+footer {
+    background-color: #F7EDD0;
+    color: #970C10;
+    padding: 1% 10%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 80px; /* Adjust the size of your logo */
+}
+
+.footer-text {
+    text-align: right;
+}
+
+
+@media screen and (max-width:900px) {
+    .text {
+        font-size: medium;
+        grid-column: span 2; 
+        grid-row: span 1; 
+        text-align:center;
+        justify-items: center;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #our_story {
+        background-color: #947360;
+    }
+    .cake-menu, .menubody {
+        background-color: #A1AFA0;
+    }
+}
+
+@media screen and (max-width:750px) {
+   
+    .text {
+        font-size: medium;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .grid {
+        display: block;
+    }
+
+    #cake img, #square img {
+        width: 100vw;
+    }
+
+    #our_story {
+        background-color: #970C10;
+    }
+
+    .cake-menu, .menubody{
+        background-color: #970C10;
+    }
+}
